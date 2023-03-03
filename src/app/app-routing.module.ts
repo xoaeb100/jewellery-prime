@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppLayoutComponent } from './layout/app.layout.component';
+import { UserModule } from './user/user.module';
 
 const routes: Routes = [];
 
@@ -18,6 +19,12 @@ const routes: Routes = [];
                 import('./demo/components/dashboard/dashboard.module').then(
                   (m) => m.DashboardModule
                 ),
+            },
+
+            {
+              path: 'sign-up',
+              loadChildren: () =>
+                import('../app/user/user.module').then((m) => m.UserModule),
             },
             {
               path: 'uikit',
