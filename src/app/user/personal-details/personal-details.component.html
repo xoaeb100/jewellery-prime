@@ -1,0 +1,115 @@
+<app-main></app-main>
+<div class="col-12 md:col-6">
+
+
+  <div class="card p-fluid">
+    <h5 style="margin-bottom: 50px;">Personal Details :</h5>
+
+    <div class="main" style="justify-content: space-between; display: flex;">
+
+      <div class="first-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="first-name" pInputText (ngModel)="firstName">
+            <label for="inputtext">First Name</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="mobile-no" pInputText (ngModel)="mobileNo">
+            <label for="inputtext">Mobile Nummber</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="gstNo" pInputText (ngModel)="gstNo">
+            <label for="gst">GST Number</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <p-calendar inputId="calendar" (ngModel)="dob"></p-calendar>
+            <label for="calendar">Calendar</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+      <div class="second-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="Last-name" pInputText (ngModel)="lastName">
+            <label for="inputtext">Last Name</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="aadharNo" pInputText (ngModel)="aadharNo">
+            <label for="aadharNo">Aadhar Number</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="panNo" pInputText (ngModel)="panNo">
+            <label for="panNo">PAN Number</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+      <div class="third-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="email" pInputText (ngModel)="email">
+            <label for="email">Email</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="shopUniqueNo" pInputText (ngModel)="shopUniqueNo">
+            <label for="shopUniqueNo">Shop Unique Number</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="registrationId" pInputText (ngModel)="registrationId">
+            <label for="registrationId">Registration Id</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+      <div class="fourth-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <p-password inputId="password" (ngModel)="password"></p-password>
+            <label for="password">Password</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="gender" (ngModel)="value8"
+              optionLabel="name"></p-dropdown>
+            <label for="gender">Gender</label>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <p-button [routerLink]="['/sign-up/business']" style="float: right" label="Next" icon="pi pi-arrow-right"
+    iconPos="right"></p-button>
+
+</div>

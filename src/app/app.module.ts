@@ -17,10 +17,17 @@ import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
 import { ProductService } from './demo/service/product.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, AppLayoutModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    CommonModule,
+    AppLayoutModule,
+  ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     CountryService,
