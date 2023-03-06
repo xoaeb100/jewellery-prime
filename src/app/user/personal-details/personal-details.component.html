@@ -4,23 +4,27 @@
 
     <div class="main" style="justify-content: space-between; display: flex;">
 
-      <div class="first-row" style="width:90px">
+      <div class="first-row">
 
         <div class="field">
-          <label htmlFor="name1">First Name</label>
-          <input pInputText id="name1" type="text" />
+          <span class="p-float-label">
+            <input type="text" id="first-name" pInputText (ngModel)="firstName">
+            <label for="inputtext">First Name</label>
+          </span>
         </div>
         <div class="field">
-          <label htmlFor="email1">Last Name</label>
-          <input pInputText id="name2" type="text" />
+          <span class="p-float-label">
+            <input type="text" id="mobile-no" pInputText (ngModel)="mobileNo">
+            <label for="inputtext">Mobile Nummber</label>
+          </span>
         </div>
         <div class="field">
-          <label htmlFor="age1">Email</label>
-          <input pInputText id="email1" type="text" />
+          <label htmlFor="age1">GST Number</label>
+          <input pInputText id="gst-no" type="text" placeholder="GST Number" />
         </div>
         <div class="field">
-          <label htmlFor="age1">Password</label>
-          <input pInputText id="pass1" type="text" />
+          <label htmlFor="age1">Date of birth</label>
+          <input pInputText id="dob" type="date" placeholder="Date of birth" />
         </div>
       </div>
       <br>
@@ -28,16 +32,18 @@
       <div class="second-row">
 
         <div class="field">
-          <label htmlFor="age1">Mobile Number</label>
-          <input pInputText id="Mobile-no" type="number" />
+          <span class="p-float-label">
+            <input type="text" id="Last-name" pInputText (ngModel)="lastName">
+            <label for="inputtext">Last Name</label>
+          </span>
         </div>
         <div class="field">
           <label htmlFor="age1">Aadhar Number</label>
-          <input pInputText id="aadhar-no" type="text" />
+          <input pInputText id="aadhar-no" type="text" placeholder="Aadhar Number" />
         </div>
         <div class="field">
           <label htmlFor="age1">PAN Number</label>
-          <input pInputText id="pan-no" type="text" />
+          <input pInputText id="pan-no" type="text" placeholder="PAN Number" />
         </div>
       </div>
       <br>
@@ -45,20 +51,20 @@
       <div class="third-row">
 
         <div class="field">
-          <label htmlFor="age1">GST Number</label>
-          <input pInputText id="gst-no" type="text" />
+          <label htmlFor="age1">Email</label>
+          <input pInputText id="email1" type="text" placeholder="Enter your Email" />
         </div>
         <div class="field">
           <label htmlFor="age1">User Type</label>
-          <input pInputText id="type" type="text" />
+          <input pInputText id="type" type="text" placeholder="User Type" />
         </div>
         <div class="field">
           <label htmlFor="age1">Shop unique id</label>
-          <input pInputText id="shop-unique-id" type="text" />
+          <input pInputText id="shop-unique-id" type="text" placeholder="shop unique id" />
         </div>
         <div class="field">
           <label htmlFor="age1">Registration ID</label>
-          <input pInputText id="registrationId" type="text" />
+          <input pInputText id="registrationId" type="text" placeholder="registrationId" />
         </div>
       </div>
       <br>
@@ -66,12 +72,12 @@
       <div class="fourth-row">
 
         <div class="field">
-          <label htmlFor="age1">Date of birth</label>
-          <input pInputText id="dob" type="date" />
+          <label htmlFor="age1">Password</label>
+          <input pInputText id="pass1" type="text" placeholder="Enter your password" />
         </div>
         <div class="field">
-          <label htmlFor="age1">Gender</label>
-          <input pInputText id="gender1" type="text" />
+          <label htmlFor="gender1">Gender</label>
+          <p-dropdown [options]="gender" (ngModel)="selectedDrop" placeholder="gender" [showClear]="true"></p-dropdown>
         </div>
 
       </div>
