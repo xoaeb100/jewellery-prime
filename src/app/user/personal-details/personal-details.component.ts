@@ -7,7 +7,7 @@ import { SelectItem } from 'primeng/api';
   styleUrls: ['./personal-details.component.scss'],
 })
 export class PersonalDetailsComponent {
-  gender: any[] = ['Male', 'Female'];
+  gender!: any[];
   selectedDrop: SelectItem = { value: '' };
   firstName!: string;
   lastName!: string;
@@ -18,7 +18,14 @@ export class PersonalDetailsComponent {
   dob!: string;
   email!: string;
   password!: string;
-  userType!: string;
   registrationId!: string;
   shopUniqueNo!: string;
+  value8: any;
+
+  constructor() {
+    this.gender = [
+      { name: 'Male', code: 'Male' },
+      { name: 'Female', code: 'Female' },
+    ];
+  }
 }

@@ -1,1 +1,24 @@
-<p>kyc-details works!</p>
+<div class="kyc" style="display: flex; justify-content: space-evenly;">
+
+  <div class="field">
+    <span class="p-float-label">
+      <input type="text" id="first-name" pInputText (ngModel)="firstName">
+      <label for="inputtext">First Name</label>
+    </span>
+  </div>
+  <br>
+  <div class="field">
+    <span class="p-float-label">
+      <input type="text" id="mobile-no" pInputText (ngModel)="mobileNo">
+      <label for="inputtext">Mobile Nummber</label>
+    </span>
+  </div>
+  <br>
+  <div class="field">
+    <span class="p-float-label">
+      <input type="text" id="gstNo" pInputText (ngModel)="gstNo">
+      <label for="gst">GST Number</label>
+    </span>
+  </div>
+
+</div>
