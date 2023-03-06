@@ -3,7 +3,7 @@
 
 
   <div class="card p-fluid">
-    <h5>Personal Details :</h5>
+    <h5 style="margin-bottom: 50px;">Personal Details :</h5>
 
     <div class="main" style="justify-content: space-between; display: flex;">
 
@@ -15,19 +15,26 @@
             <label for="inputtext">First Name</label>
           </span>
         </div>
+        <br>
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="mobile-no" pInputText (ngModel)="mobileNo">
             <label for="inputtext">Mobile Nummber</label>
           </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">GST Number</label>
-          <input pInputText id="gst-no" type="text" placeholder="GST Number" />
+          <span class="p-float-label">
+            <input type="text" id="gstNo" pInputText (ngModel)="gstNo">
+            <label for="gst">GST Number</label>
+          </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">Date of birth</label>
-          <input pInputText id="dob" type="date" placeholder="Date of birth" />
+          <span class="p-float-label">
+            <p-calendar inputId="calendar" (ngModel)="dob"></p-calendar>
+            <label for="calendar">Calendar</label>
+          </span>
         </div>
       </div>
       <br>
@@ -40,13 +47,19 @@
             <label for="inputtext">Last Name</label>
           </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">Aadhar Number</label>
-          <input pInputText id="aadhar-no" type="text" placeholder="Aadhar Number" />
+          <span class="p-float-label">
+            <input type="text" id="aadharNo" pInputText (ngModel)="aadharNo">
+            <label for="aadharNo">Aadhar Number</label>
+          </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">PAN Number</label>
-          <input pInputText id="pan-no" type="text" placeholder="PAN Number" />
+          <span class="p-float-label">
+            <input type="text" id="panNo" pInputText (ngModel)="panNo">
+            <label for="panNo">PAN Number</label>
+          </span>
         </div>
       </div>
       <br>
@@ -54,20 +67,24 @@
       <div class="third-row">
 
         <div class="field">
-          <label htmlFor="age1">Email</label>
-          <input pInputText id="email1" type="text" placeholder="Enter your Email" />
+          <span class="p-float-label">
+            <input type="text" id="email" pInputText (ngModel)="email">
+            <label for="email">Email</label>
+          </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">User Type</label>
-          <input pInputText id="type" type="text" placeholder="User Type" />
+          <span class="p-float-label">
+            <input type="text" id="shopUniqueNo" pInputText (ngModel)="shopUniqueNo">
+            <label for="shopUniqueNo">Shop Unique Number</label>
+          </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="age1">Shop unique id</label>
-          <input pInputText id="shop-unique-id" type="text" placeholder="shop unique id" />
-        </div>
-        <div class="field">
-          <label htmlFor="age1">Registration ID</label>
-          <input pInputText id="registrationId" type="text" placeholder="registrationId" />
+          <span class="p-float-label">
+            <input type="text" id="registrationId" pInputText (ngModel)="registrationId">
+            <label for="registrationId">Registration Id</label>
+          </span>
         </div>
       </div>
       <br>
@@ -75,12 +92,18 @@
       <div class="fourth-row">
 
         <div class="field">
-          <label htmlFor="age1">Password</label>
-          <input pInputText id="pass1" type="text" placeholder="Enter your password" />
+          <span class="p-float-label">
+            <p-password inputId="password" (ngModel)="password"></p-password>
+            <label for="password">Password</label>
+          </span>
         </div>
+        <br>
         <div class="field">
-          <label htmlFor="gender1">Gender</label>
-          <p-dropdown [options]="gender" (ngModel)="selectedDrop" placeholder="gender" [showClear]="true"></p-dropdown>
+          <span class="p-float-label">
+            <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="gender" (ngModel)="value8"
+              optionLabel="name"></p-dropdown>
+            <label for="gender">Gender</label>
+          </span>
         </div>
 
       </div>

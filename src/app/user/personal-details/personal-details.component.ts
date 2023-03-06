@@ -19,7 +19,6 @@ export class PersonalDetailsComponent implements OnInit {
   dob!: string;
   email!: string;
   password!: string;
-  userType!: string;
   registrationId!: string;
   shopUniqueNo!: string;
 

@@ -8,6 +8,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
 import { StepsModule } from 'primeng/steps';
 import { MenuItem } from 'primeng/api';
+import { CalendarModule } from 'primeng/calendar';
+import { PasswordModule } from 'primeng/password';
 
 import { ToastModule } from 'primeng/toast';
 import { MainComponent } from './main/main.component';
@@ -33,6 +35,8 @@ const routes: Routes = [
     StepsModule,
     ToastModule,
 
+    CalendarModule,
+    PasswordModule,
     [RouterModule.forChild(routes)],
   ],
 })
