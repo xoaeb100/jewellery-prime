@@ -1,16 +1,15 @@
+<app-main></app-main>
+
 <div class="col-12 md:col-6" >
-  <app-main></app-main>
-
-
   <div class="card p-fluid">
-    <h5 style="margin-bottom:30px;">Business Details :</h5>
+    <h5 style="margin-bottom:50px;">Business Details :</h5>
 
-    <div class="main" style="justify-content: space-evenly; display: flex; ">
+    <div class="main" style="justify-content: space-between; display: flex; ">
 
       <div class="first-row;">
-
+             
         <div class="field">
-          <span class="p-float-label">
+          <span class="p-float-lab  el">
             <input type="text" id="inputtext" pInputText (ngModel)="businessName">
             <label for="inputtext">Business name</label>
           </span>
@@ -37,6 +36,9 @@
             <label for="inputtext">Addhar No</label>
           </span>
         </div>
+  
+
+      <div class="second-row">
         <br>
         <div class="field">
           <span class="p-float-label">
@@ -47,8 +49,6 @@
       </div>
       <br>
 
-      <div class="second-row">
-
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="mobileNo">
@@ -56,6 +56,7 @@
           </span>
         </div>
         <br>
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="gstNo">
@@ -69,7 +70,11 @@
             <label for="inputnumber">Reg No</label>
           </span>
         </div>
-        <br>
+       
+   
+
+      <div class="third-row">
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="cinNo">
@@ -77,14 +82,13 @@
           </span>
         </div>
       </div>
-      <br>
 
-      <div class="third-row">
+      <br>
 
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="line1">
-            <label for="inputnumber">line1</label>
+            <label for="inputnumber">Address</label>
           </span>
         </div>
         <br>
@@ -92,17 +96,20 @@
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="line2">
-            <label for="inputnumber">line2</label>
+            <label for="inputnumber">Address</label>
           </span>
         </div>
         <br>
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="state">
             <label for="inputnumber">State</label>
           </span>
         </div>
-        <br>
+       
+      
+        <div class="forth-row">
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="district">
@@ -110,6 +117,7 @@
           </span>
         </div>
         <br>
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="city">
@@ -117,6 +125,7 @@
           </span>
         </div>
         <br>
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="pincode">
