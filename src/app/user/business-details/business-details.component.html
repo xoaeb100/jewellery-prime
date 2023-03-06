@@ -1,3 +1,110 @@
 <app-main></app-main>
 
-<p>business-details works!</p>
+<div class="col-12 md:col-6" style="width:100%">
+  <div class="card p-fluid">
+    <h5 style="margin-bottom:50px;">Business Details :</h5>
+
+    <div class="main" style="justify-content: space-between; display: flex; ">
+
+      <div class="first-row;">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="businessName">
+            <label for="inputtext">Business name</label>
+          </span>
+
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="businessType">
+            <label for="inputtext">Business Type</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="businessCategory">
+            <label for="inputtext">Business Category</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="addharNo">
+            <label for="inputtext">Addhar No</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="panNo">
+            <label for="inputtext">PAN No</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+      <div class="second-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="mobileNo">
+            <label for="inputnumber">Mobile No</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="gstNo">
+            <label for="inputnumber">GST No</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="regNo">
+            <label for="inputnumber">Reg No</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="cinNo">
+            <label for="inputnumber">CIN No</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+      <div class="third-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="address">
+            <label for="inputnumber">Address</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="state">
+            <label for="inputnumber">State</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="district">
+            <label for="inputnumber">District</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="city">
+            <label for="inputnumber">city</label>
+          </span>
+        </div>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="pincode">
+            <label for="inputnumber">Pincode</label>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
