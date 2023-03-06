@@ -8,7 +8,7 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./personal-details.component.scss'],
 })
 export class PersonalDetailsComponent implements OnInit {
-  gender: any[] = ['Male', 'Female'];
+  gender!: any[];
   selectedDrop: SelectItem = { value: '' };
   firstName!: string;
   lastName!: string;
@@ -23,10 +23,17 @@ export class PersonalDetailsComponent implements OnInit {
   registrationId!: string;
   shopUniqueNo!: string;
 
+  value8: any;
+
   items!: MenuItem[];
 
   activeIndex: number = 1;
-
+  constructor() {
+    this.gender = [
+      { name: 'Male', code: 'Male' },
+      { name: 'Female', code: 'Female' },
+    ];
+  }
   ngOnInit() {
     this.items = [
       {

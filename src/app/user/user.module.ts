@@ -10,7 +10,10 @@ import { StepsModule } from 'primeng/steps';
 import { MenuItem } from 'primeng/api';
 
 import { ToastModule } from 'primeng/toast';
+import { MainComponent } from './main/main.component';
 const routes: Routes = [
+  { path: '', component: PersonalDetailsComponent },
+
   { path: 'personal', component: PersonalDetailsComponent },
   { path: 'kyc', component: KycDetailsComponent },
   { path: 'business', component: BusinessDetailsComponent },
@@ -21,6 +24,7 @@ const routes: Routes = [
     PersonalDetailsComponent,
     BusinessDetailsComponent,
     KycDetailsComponent,
+    MainComponent,
   ],
   imports: [
     CommonModule,
