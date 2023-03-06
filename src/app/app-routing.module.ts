@@ -26,6 +26,12 @@ const routes: Routes = [];
               loadChildren: () =>
                 import('../app/user/user.module').then((m) => m.UserModule),
             },
+
+            {
+              path: 'plans',
+              loadChildren: () =>
+                import('../app/plans/plans.module').then((m) => m.PlansModule),
+            },
             {
               path: 'uikit',
               loadChildren: () =>
