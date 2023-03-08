@@ -1,21 +1,22 @@
-<app-main></app-main>
-
 <div class="col-12 md:col-6" >
+  <app-main></app-main>
+
+
   <div class="card p-fluid">
     <h5 style="margin-bottom:50px;">Business Details :</h5>
 
     <div class="main" style="justify-content: space-between; display: flex; ">
 
-      <div class="first-row;">
+      <div class="first-row">
              
         <div class="field">
-          <span class="p-float-lab  el">
+          <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="businessName">
             <label for="inputtext">Business name</label>
           </span>
-
         </div>
         <br>
+
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="businessType">
@@ -36,17 +37,19 @@
             <label for="inputtext">Addhar No</label>
           </span>
         </div>
+      </div>
+      <br>
+    
   
 
       <div class="second-row">
-        <br>
+       
         <div class="field">
           <span class="p-float-label">
             <input type="text" id="inputtext" pInputText (ngModel)="panNo">
             <label for="inputtext">PAN No</label>
           </span>
         </div>
-      </div>
       <br>
 
         <div class="field">
@@ -70,8 +73,9 @@
             <label for="inputnumber">Reg No</label>
           </span>
         </div>
-       
-   
+      </div>
+      <br>
+    
 
       <div class="third-row">
 
@@ -81,8 +85,6 @@
             <label for="inputnumber">CIN No</label>
           </span>
         </div>
-      </div>
-
       <br>
 
         <div class="field">
@@ -107,6 +109,9 @@
             <label for="inputnumber">State</label>
           </span>
         </div>
+      </div>
+      <br>
+    
        
       
         <div class="forth-row">
@@ -136,4 +141,5 @@
 
     </div>
   </div>
-</div>
+</div> 
+
