@@ -16,7 +16,8 @@ export class BusinessDetailsComponent {
   gstNo!:string;
   regNo!:string;
   cinNo!:string;
-  address!:string;
+  line1!:string;
+  line2!:string;
   state!:string;
   district!:string;
   city!:string;
