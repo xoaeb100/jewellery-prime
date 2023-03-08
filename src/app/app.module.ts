@@ -18,15 +18,19 @@ import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
 import { ProductService } from './demo/service/product.service';
 import { FormsModule } from '@angular/forms';
+import { UiModule } from './ui/ui.module';
+import { PlansModule } from './plans/plans.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    UiModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     CommonModule,
     AppLayoutModule,
+    PlansModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
