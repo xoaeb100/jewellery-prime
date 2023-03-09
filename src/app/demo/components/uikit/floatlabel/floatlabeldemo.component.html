@@ -1,86 +1,106 @@
-<div class="card">
-    <h5>Float Label</h5>
-    <p>All input text components support floating labels by adding (<mark>.p-float-label</mark>) to wrapper class.</p>
-    <div class="grid p-fluid mt-3">
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
-                <label for="inputtext">InputText</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredCountries"
-                (completeMethod)="searchCountry($event)" field="name"></p-autoComplete>
-                <label for="autocomplete">AutoComplete</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label p-input-icon-left">
-                <i class="pi pi-search"></i>
-                <input type="text" id="lefticon" pInputText [(ngModel)]="value3">
-                <label for="lefticon">Left Icon</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label p-input-icon-right">
-                <input type="text" id="righticon" pInputText [(ngModel)]="value4">
-                <label for="righticon">Right Icon</label>
-                <i class="pi pi-spin pi-spinner"></i>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-calendar inputId="calendar" [(ngModel)]="value5"></p-calendar>
-                <label for="calendar">Calendar</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-chips inputId="chips" [(ngModel)]="value6"></p-chips>
-                <label for="chips">Chips</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value7"></p-inputMask>
-                <label for="inputmask">InputMask</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-inputNumber inputId="inputnumber" [(ngModel)]="value8"></p-inputNumber>
-                <label for="inputnumber">InputNumber</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <div class="p-inputgroup">
-                <span class="p-inputgroup-addon">
-                    <i class="pi pi-user"></i>
-                </span>
-                <span class="p-float-label">
-                    <input type="text" inputId="inputgroup" pInputText [(ngModel)]="value9"> 
-                    <label for="inputgroup">InputGroup</label>
-                </span>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    .maincontainer
+    {
+        display: flex;
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+
+    }
+    .customer{
+        display: flex;
+        padding: 1rem;
+        border-radius: 12px;
+        /* height: 100%; */
+        flex-direction: column;
+    }
+
+    .customer_box{
+        width: 10rem;
+        background-color: #cecece;
+        border-radius: 10px;
+        text-align: center;
+       
+    }
+    .profile{
+        border: 1px solid #d2d2d2;
+        width: 15rem;
+        border-radius: 12px;
+        padding: 1rem;
+        background-color: #e4e8e4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile img{
+        margin: 0.4rem;
+        border-radius: 50%;
+        border: 1px solid rgb(68, 68, 68);
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .list h3{
+        margin: 1rem;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    .h4{
+        font-family: 'Poppins', sans-serif; 
+    }
+
+    .list li{
+        list-style: none;
+        margin: 0.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .listbox{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+</style>
+<div class="maincontainer">
+    <div class="customer">
+        <h1>
+    
+            Customer Overview
+        </h1>
+        <div class="profile">
+
+            <div class="customer_box">
+                <img src="../../../../../assets/layout/images/banner-primeblocks.png" alt="profile image">
+                <h4> Customer</h4>
+            </div>
+            <div class="list">
+                <h3>Plans</h3>
+                <div class="listbox">
+                <li>Plan 1 </li>
+                <li>+$450</li>
+                </div>
+                <div class="listbox">   <li>Plan 1 </li>
+                    <li>+$450</li></div>
+                <div class="listbox">   <li>Plan 1 </li>
+                    <li>+$450</li></div>
+          
             </div>
         </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value10" optionLabel="name"></p-dropdown>
-                <label for="dropdown">Dropdown</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <p-multiSelect inputId="multiselect" [options]="cities" [(ngModel)]="value11" optionLabel="name" [filter]="false"></p-multiSelect>
-                <label for="multiselect">MultiSelect</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label">
-                <textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value12" pInputTextarea></textarea>
-                <label for="textarea">Textarea</label>
-            </span>
+    </div>
+    <div class="newbox">
+        <div class="chartbox">
+            <div class="pie">
+
+            </div>
+            <div class="graph">
+             
+            </div>
         </div>
     </div>
+  
 </div>
