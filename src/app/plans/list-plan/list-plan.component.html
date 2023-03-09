@@ -1,0 +1,36 @@
+<p-speedDial style="float:right" [model]="items" direction="down"></p-speedDial>
+<div style="display: flex;flex-direction:row">
+  <div class="card-1">
+    <p-card header="Silver Plan" subheader="EMI Amount: 5,000₹" [style]="{width: '360px'}" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="../../../assets/images/silver.jpg">
+      </ng-template>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+      </p>
+      <ng-template pTemplate="footer">
+        <p-button label="Edit" icon="pi pi-pencil"></p-button>
+        <p-button label="Select" icon="pi pi-check" styleClass="p-button-info" [style]="{'margin-left': '.5em'}">
+        </p-button>
+      </ng-template>
+    </p-card>
+  </div>
+  <div class="card-2">
+    <p-card header="Gold Plan" subheader="EMI Amount: 10,000₹" [style]="{width: '360px'}" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="../../../assets/images/gold.jpg">
+      </ng-template>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+      </p>
+      <ng-template pTemplate="footer">
+        <p-button label="Edit" icon="pi pi-pencil"></p-button>
+        <p-button label="Select" icon="pi pi-check" styleClass="p-button-info" [style]="{'margin-left': '.5em'}">
+        </p-button>
+      </ng-template>
+    </p-card>
+  </div>
+
+</div>

@@ -4,16 +4,7 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { BusinessDetailsComponent } from './business-details/business-details.component';
 import { KycDetailsComponent } from './kyc-details/kyc-details.component';
 import { RouterModule, Routes } from '@angular/router';
-import { InputTextModule } from 'primeng/inputtext';
-import { DropdownModule } from 'primeng/dropdown';
-import { StepsModule } from 'primeng/steps';
-import { MenuItem } from 'primeng/api';
-import { CalendarModule } from 'primeng/calendar';
-import { PasswordModule } from 'primeng/password';
-import { FileUploadModule } from 'primeng/fileupload';
-import { HttpClientModule } from '@angular/common/http';
-
-import { ToastModule } from 'primeng/toast';
+import { UiModule } from '../ui/ui.module';
 import { MainComponent } from './main/main.component';
 const routes: Routes = [
   { path: '', component: PersonalDetailsComponent },
@@ -30,17 +21,6 @@ const routes: Routes = [
     KycDetailsComponent,
     MainComponent,
   ],
-  imports: [
-    CommonModule,
-    DropdownModule,
-    InputTextModule,
-    StepsModule,
-    ToastModule,
-    FileUploadModule,
-    CalendarModule,
-    PasswordModule,
-    HttpClientModule,
-    [RouterModule.forChild(routes)],
-  ],
+  imports: [UiModule, CommonModule, [RouterModule.forChild(routes)]],
 })
 export class UserModule {}
