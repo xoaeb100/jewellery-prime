@@ -10,6 +10,8 @@ import { StepsModule } from 'primeng/steps';
 import { MenuItem } from 'primeng/api';
 import { CalendarModule } from 'primeng/calendar';
 import { PasswordModule } from 'primeng/password';
+import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ToastModule } from 'primeng/toast';
 import { MainComponent } from './main/main.component';
@@ -34,9 +36,10 @@ const routes: Routes = [
     InputTextModule,
     StepsModule,
     ToastModule,
-
+    FileUploadModule,
     CalendarModule,
     PasswordModule,
+    HttpClientModule,
     [RouterModule.forChild(routes)],
   ],
 })
