@@ -10,6 +10,8 @@ import { CardModule } from 'primeng/card';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { SliderModule } from 'primeng/slider';
 import { FileUploadModule } from 'primeng/fileupload';
+import { TableModule } from 'primeng/table';
+import { MultiSelectModule } from 'primeng/multiselect';
 
 const arrays = [
   CommonModule,
@@ -23,6 +25,8 @@ const arrays = [
   SpeedDialModule,
   SliderModule,
   FileUploadModule,
+  TableModule,
+  MultiSelectModule,
 ];
 @NgModule({
   declarations: [],
