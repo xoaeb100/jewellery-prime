@@ -4,7 +4,7 @@
 }
 
 div{
-  font-family: cursive;
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
   color:#c7ba06;
  
 }
@@ -12,7 +12,7 @@ div{
     input[type="text"] {
         width:95%;
        
-        font-family: cursive;
+        font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
          background-color: rgb(255, 255, 255);
         // border: 1px solid rgb(253, 215, 0);
         border-radius: 8px;
@@ -24,6 +24,7 @@ div{
       }
      
 
+    
       .shop-nav{
         background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #FEDB37  62.5%, #5d4a1f 100%);
@@ -43,9 +44,7 @@ div{
       font-family: inherit;
       // color: gold, darkgoldenrod;
      -webkit-text-fill-color: transparent;
-     color:red;
+     color:#c7ba06,#FDB931;
   
     }
-    .color-change-input:focus {
-      color: red;
-    }
+   
