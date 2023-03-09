@@ -10,7 +10,7 @@ export class BusinessDetailsComponent {
   businessName!: string;
   businessType!: string;
   businessCategory!:string;
-  addharNo!:string;
+  aadhaarNo!:string;
   panNo!:string;
   mobileNo!:number;
   gstNo!:string;
