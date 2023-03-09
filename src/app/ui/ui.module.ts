@@ -9,6 +9,7 @@ import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { SliderModule } from 'primeng/slider';
+import { FileUploadModule } from 'primeng/fileupload';
 
 const arrays = [
   CommonModule,
@@ -21,6 +22,7 @@ const arrays = [
   CardModule,
   SpeedDialModule,
   SliderModule,
+  FileUploadModule,
 ];
 @NgModule({
   declarations: [],
