@@ -1,36 +1,237 @@
-<p-speedDial style="float:right" [model]="items" direction="down"></p-speedDial>
-<div style="display: flex;flex-direction:row">
-  <div class="card-1">
-    <p-card header="Silver Plan" subheader="EMI Amount: 5,000₹" [style]="{width: '360px'}" styleClass="p-card-shadow">
-      <ng-template pTemplate="header">
-        <img alt="Card" src="../../../assets/images/silver.jpg">
-      </ng-template>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
-        deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-      </p>
-      <ng-template pTemplate="footer">
-        <p-button label="Edit" icon="pi pi-pencil"></p-button>
-        <p-button label="Select" icon="pi pi-check" styleClass="p-button-info" [style]="{'margin-left': '.5em'}">
-        </p-button>
-      </ng-template>
-    </p-card>
-  </div>
-  <div class="card-2">
-    <p-card header="Gold Plan" subheader="EMI Amount: 10,000₹" [style]="{width: '360px'}" styleClass="p-card-shadow">
-      <ng-template pTemplate="header">
-        <img alt="Card" src="../../../assets/images/gold.jpg">
-      </ng-template>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
-        deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-      </p>
-      <ng-template pTemplate="footer">
-        <p-button label="Edit" icon="pi pi-pencil"></p-button>
-        <p-button label="Select" icon="pi pi-check" styleClass="p-button-info" [style]="{'margin-left': '.5em'}">
-        </p-button>
-      </ng-template>
-    </p-card>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+  h1{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+
+  }
+  .customer{
+      display: flex;
+      padding: 1rem;
+      border-radius: 12px;
+      /* height: 100%; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .customer_box{
+      
+      width: 10rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 1rem;
+      width: 100%;
+      background-image: linear-gradient(to bottom, #e8d174, #c59a3a);
+     
+  }
+  .btn2{
+        
+      width: 100%;
+      padding: 1rem;
+      
+      border-radius: 12px;
+      font-size: 30px;
+      font-family: sans-serif;
+      font-weight: 600;
+      border: none;
+      background-image: linear-gradient(to bottom, #e8d174, #c59a3a);
+  }
+ 
+  .edit-box{
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      margin: 1rem;
+      /* background-color: #c59a3a; */
+      background: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .edit-box h4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  }
+  .profile{
+      margin: 1rem;
+      border: 3px solid #000000;
+      width: 15rem;
+      border-radius: 12px;
+      padding: 1rem;
+      background-color: #e4e8e4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .profile img{
+      margin: 0.4rem;
+      border-radius: 50%;
+      border: 1px solid rgb(68, 68, 68);
+      width: 6rem;
+      height: 6rem;
+  }
+
+  .list h3{
+      margin: 1rem;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+  }
+
+  .h4{
+      font-family: 'Poppins', sans-serif; 
+  }
+
+  .list li{
+      list-style: none;
+      margin: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+  }
+  .listbox{
+      display: flex;
+      justify-content: space-between;
+  }
+  .createplan{
+      margin: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn{
+    border-radius: 12px;
+    width: 100%;
+      width: 100%;
+      border-radius: 12px;
+      font-size: 24px;
+      font-family: sans-serif;
+      padding: 1rem;
+      font-weight: 600;
+      border: 1px solid white;
+      background-image: linear-gradient(to bottom, #e8d174, #c59a3a);
+
+
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #e8d174, #997c3d);
+
+  }
+  .btn1{
+   
+      border: none;
+      background-color: #c59a3a;
+      width: 100%;
+      border-radius: 12px;
+      font-size: 18px;
+      font-family: sans-serif;
+      padding: 1rem;
+      font-weight: 600;
+  
+
+
+  }
+</style>
+<!-- <div class="maincontainer"> -->
+  <h1>
+
+ My plans
+  </h1>
+  <div class="customer">
+      <div class="profile">
+
+          <div class="customer_box">
+        <button class="btn2">
+           Plan 1 
+        </button>
+          </div>
+          <div class="list">
+              <!-- <h3>Plans</h3> -->
+              <div class="listbox">
+              <li>Monthly installment </li>
+              <li>$450</li>
+              </div>
+              <div class="listbox">   <li>Maturity <br> Amount </li>
+                  <li>$450</li></div>
+              <div class="listbox">   <li>Type  </li>
+                  <li>Monthly</li></div>
+                  <div class="listbox">   <li>Duration  </li>
+                      <li>11 Months</li></div>
+        
+          </div>
+          <div class="edit-box">
+              <button class="btn1">Edit</button>
+           </div>
+      </div>
+      <div class="profile">
+
+          <div class="customer_box">
+              <button class="btn2">
+                 Plan 2 
+              </button>
+                </div>
+          <div class="list">
+              <!-- <h3>Plans</h3> -->
+              <div class="listbox">
+                  <li>Monthly installment </li>
+                  <li>$450</li>
+                  </div>
+                  <div class="listbox">   <li>Maturity <br> Amount </li>
+                      <li>$450</li></div>
+                  <div class="listbox">   <li>Type  </li>
+                      <li>Monthly</li></div>
+                      <div class="listbox">   <li>Duration  </li>
+                          <li>11 Months</li></div>
+            
+        
+          </div>
+          <div class="edit-box">
+              <button class="btn1">Edit</button>
+           </div>
+      </div>
+      <div class="profile">
+
+          <div class="customer_box">
+              <button class="btn2">
+                 Plan 3
+              </button>
+                </div>
+          <div class="list">
+              <!-- <h3>Plans</h3> -->
+              <div class="listbox">
+                  <li>Monthly installment </li>
+                  <li>$450</li>
+                  </div>
+                  <div class="listbox">   <li>Maturity <br> Amount </li>
+                      <li>$450</li></div>
+                  <div class="listbox">   <li>Type  </li>
+                      <li>Monthly</li></div>
+                      <div class="listbox">   <li>Duration  </li>
+                          <li>11 Months</li></div>
+            
+        
+          </div>
+          <div class="edit-box">
+             <button class="btn1">Edit</button>
+          </div>
+      </div>
   </div>
 
-</div>
+  <div class="createplan">
+    <button [routerLink]="['/plans/add']" class="btn"
+>Create new plan</button>
+  </div>
+
+
+
+<!-- </div> -->
+

@@ -11,6 +11,7 @@ import { SpeedDialModule } from 'primeng/speeddial';
 import { SliderModule } from 'primeng/slider';
 import { FileUploadModule } from 'primeng/fileupload';
 
+
 const arrays = [
   CommonModule,
   CalendarModule,
