@@ -22,6 +22,16 @@ export class PersonalDetailsComponent implements OnInit {
   registrationId!: string;
   shopUniqueNo!: string;
 
+  // Address
+  line1!: string;
+  line2!: string;
+  landMark!: string;
+  pinCode!: string;
+  country!: string;
+  city!: string;
+  state!: string;
+  regionCode!: string;
+
   value8: any;
 
   items!: MenuItem[];

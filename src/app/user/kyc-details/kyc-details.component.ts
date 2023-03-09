@@ -9,4 +9,8 @@ export class KycDetailsComponent {
   firstName!: string;
   mobileNo!: string;
   gstNo!: string;
+
+  uploadedFiles: any[] = [];
+
+  onBasicUploadAuto(event: any): void {}
 }

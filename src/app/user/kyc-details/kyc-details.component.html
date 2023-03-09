@@ -3,25 +3,18 @@
 <p>kyc-details works!</p>
 <div class="kyc" style="display: flex; justify-content: space-evenly;">
 
+  <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+    (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Upload Aadhar Card"></p-fileUpload>
+
+  <br>
   <div class="field">
-    <span class="p-float-label">
-      <input type="text" id="first-name" pInputText (ngModel)="firstName">
-      <label for="inputtext">First Name</label>
-    </span>
+    <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+      (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Upload PAN Card"></p-fileUpload>
   </div>
   <br>
   <div class="field">
-    <span class="p-float-label">
-      <input type="text" id="mobile-no" pInputText (ngModel)="mobileNo">
-      <label for="inputtext">Mobile Nummber</label>
-    </span>
-  </div>
-  <br>
-  <div class="field">
-    <span class="p-float-label">
-      <input type="text" id="gstNo" pInputText (ngModel)="gstNo">
-      <label for="gst">GST Number</label>
-    </span>
+    <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+      (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Voter ID Card"></p-fileUpload>
   </div>
   <p-button [routerLink]="['/']" style="float: right" label="Submit" icon="pi pi-arrow-right" iconPos="right">
   </p-button>
