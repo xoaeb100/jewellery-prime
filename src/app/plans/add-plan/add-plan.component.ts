@@ -40,6 +40,7 @@ export class AddPlanComponent {
   }
 
   installmentAmt!: string;
+  name!: string;
   maturityAmt!: string;
   type!: any[];
   duration!: any[];

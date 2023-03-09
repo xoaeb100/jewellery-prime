@@ -33,6 +33,13 @@ const routes: Routes = [];
                 import('../app/plans/plans.module').then((m) => m.PlansModule),
             },
             {
+              path: 'transaction',
+              loadChildren: () =>
+                import('../app/transactions/transactions.module').then(
+                  (m) => m.TransactionsModule
+                ),
+            },
+            {
               path: 'uikit',
               loadChildren: () =>
                 import('./demo/components/uikit/uikit.module').then(

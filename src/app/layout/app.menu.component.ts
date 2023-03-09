@@ -39,6 +39,12 @@ export class AppMenuComponent implements OnInit {
           },
 
           {
+            label: 'Transactions',
+            icon: 'pi pi-list',
+            routerLink: ['/transaction'],
+          },
+
+          {
             label: 'Form Layout',
             icon: 'pi pi-fw pi-id-card',
             routerLink: ['/uikit/formlayout'],
