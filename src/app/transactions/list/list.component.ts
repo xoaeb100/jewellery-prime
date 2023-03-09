@@ -30,25 +30,25 @@ export class ListComponent implements OnInit {
     });
 
     this.representatives = [
-      { name: 'Amy Elsner', image: 'amyelsner.png' },
-      { name: 'Anna Fali', image: 'annafali.png' },
-      { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-      { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-      { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-      { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-      { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-      { name: 'Onyama Limba', image: 'onyamalimba.png' },
-      { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-      { name: 'Xuxue Feng', image: 'xuxuefeng.png' },
+      { name: '5000',  },
+      { name: '4900',  },
+      { name: '10000',  },
+      { name: '4000 ',  },
+      { name: '20000',  },
+      { name: '24000',  },
+      { name: '288976',  },
+      { name: '3000',  },
+      { name: '60000',  },
+      { name: '100000',  },
     ];
 
     this.statuses = [
-      { label: 'Unqualified', value: 'unqualified' },
-      { label: 'Qualified', value: 'qualified' },
-      { label: 'New', value: 'new' },
-      { label: 'Negotiation', value: 'negotiation' },
-      { label: 'Renewal', value: 'renewal' },
-      { label: 'Proposal', value: 'proposal' },
+      { label: 'Online', value: 'online' },
+      { label: 'Cash', value: 'cash' },
+      { label: 'Cheque', value: 'cheque' },
+      { label: 'Credit Card', value: 'credit card' },
+      { label: 'Debit Dard', value: 'debit card' },
+      
     ];
   }
 
