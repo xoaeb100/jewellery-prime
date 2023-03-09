@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-plan.component.scss'],
 })
 export class AddPlanComponent {
+value1: any;
   constructor() {
     this.duration = [
       { name: '1', code: '1' },
