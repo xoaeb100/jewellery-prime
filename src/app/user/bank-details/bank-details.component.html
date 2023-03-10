@@ -1,2 +1,150 @@
-<app-main></app-main>
-<p>bank-details works!</p>
+<div class="col-12 md:col-6">
+    <app-main></app-main>
+    <br>
+
+
+  <div class="card p-fluid">
+    <h5 style="margin-bottom:50px; font-family: sans-serif;">Bank Details:</h5>
+
+    <div class="main" style="justify-content: space-evenly; display: flex; ">
+
+      <div class="first-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="accountholdername" style="font-family: sans-serif;">
+            <label for="inputtext" style="font-family: sans-serif;">Account Holder's Name</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="upi">
+            <label for="inputtext" style="font-family: sans-serif;">UPI id</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="branchname">
+            <label for="inputtext" style="font-family: sans-serif;">Branch Name</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="center">
+            <label for="inputtext" style="font-family: sans-serif;">Center</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+
+
+      <div class="second-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="accounttype">
+            <label for="inputtext" style="font-family: sans-serif;">Account Type</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="sid">
+            <label for="inputnumber" style="font-family: sans-serif;">SID</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="state">
+            <label for="inputnumber" style="font-family: sans-serif;">State</label>
+          </span>
+        </div>
+        <br>
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="address">
+            <label for="inputnumber" style="font-family: sans-serif;">Address</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="third-row">
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="accountno">
+            <label for="inputnumber" style="font-family: sans-serif;">Account No</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="mid">
+            <label for="inputnumber" style="font-family: sans-serif;">MID</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="district">
+            <label for="inputnumber" style="font-family: sans-serif;">District</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="bankcode">
+            <label for="inputnumber" style="font-family: sans-serif;">Bankcode</label>
+          </span>
+        </div>
+      </div>
+      <br>
+
+
+
+      <div class="forth-row">
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="ifsccode">
+            <label for="inputnumber" style="font-family: sans-serif;">IFSC Code</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="bankname">
+            <label for="inputnumber" style="font-family: sans-serif;">Bank Name</label>
+          </span>
+        </div>
+        <br>
+
+        <div class="field">
+          <span class="p-float-label">
+            <input type="text" id="inputtext" pInputText (ngModel)="city">
+            <label for="inputnumber" style="font-family: sans-serif;">City</label>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <p-button [routerLink]="['/sign-up/kyc']" style="float: right" label="Next" icon="pi pi-arrow-right" iconPos="right">
+  </p-button>
+
+</div>
+
