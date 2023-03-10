@@ -1,10 +1,10 @@
 <div class="card">
-  <h5>Filter Row</h5>
-  <p>Filters are displayed inline within a separate row.</p>
+  <h5>Transactions Details</h5>
+  <p></p>
   <p-table #dt2 [value]="customers" dataKey="id" [rows]="10" [showCurrentPageReport]="true"
     [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true"
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-    [globalFilterFields]="['name','country.name','representative.name','status']" [tableStyle]="{'min-width':'75rem'}">
+    [globalFilterFields]="['name','state.name','representative.name','status']" [tableStyle]="{'min-width':'75rem'}">
     <ng-template pTemplate="caption">
       <div class="flex">
         <span class="p-input-icon-left ml-auto">
@@ -18,9 +18,9 @@
       <tr>
         <th style="width:22%">Name</th>
         <th style="width:22%">Country</th>
-        <th style="width:22%">Agent</th>
-        <th style="width:22%">Status</th>
-        <th style="width:12%">Verified</th>
+        <th style="width:22%">Amount</th>
+        <th style="width:22%">Payment Mode</th>
+        <th style="width:22%">Date</th>
       </tr>
       <tr>
         <th>
@@ -47,12 +47,12 @@
           </p-columnFilter>
         </th>
         <th>
-          <p-columnFilter field="status" matchMode="equals" [showMenu]="false">
+          <p-columnFilter field="paymentmode" matchMode="equals" [showMenu]="false">
             <ng-template pTemplate="filter" let-value let-filter="filterCallback">
               <p-dropdown ngModel="value" [options]="statuses" (onChange)="filter($event.value)" placeholder="Any"
                 [showClear]="true">
                 <ng-template let-option pTemplate="item">
-                  <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                  <span [class]="'customer-badge paymentmode-' + option.value">{{option.label}}</span>
                 </ng-template>
               </p-dropdown>
             </ng-template>
@@ -69,7 +69,7 @@
           {{customer.name}}
         </td>
         <td>
-          <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+          <img 
             [class]="'flag flag-' + customer.country.code" width="30">
           <span class="image-text">{{customer.country.name}}</span>
         </td>
@@ -80,7 +80,7 @@
           <span class="image-text">{{customer.representative.name}}</span>
         </td>
         <td>
-          <span [class]="'customer-badge status-' + customer.status">{{customer.status}}</span>
+          <span [class]="'customer-badge paymentnode-' + customer.status">{{customer.status}}</span>
         </td>
         <td>
           <i class="pi"
