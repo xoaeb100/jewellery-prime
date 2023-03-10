@@ -33,6 +33,12 @@ export class AppMenuComponent implements OnInit {
             routerLink: ['/sign-up/personal'],
           },
           {
+            label: 'Banks',
+            icon: 'pi pi-credit-card',
+            routerLink: ['/banks'],
+          },
+
+          {
             label: 'Plans',
             icon: 'pi pi-list',
             routerLink: ['/plans'],

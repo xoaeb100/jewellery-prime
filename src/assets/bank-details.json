@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "1000",
+      "accountNo": "S87234231987",
+      "accountHolderName": "James Bond",
+      "ifsc": "SBIN000001",
+      "bankname": "SBI",
+      "branch": "ABC",
+      "zipCode": "400001",
+      "state": "ABC",
+      "district": "ABC",
+      "city": "ABC",
+      "centre": "ABC",
+      "address": "ABC",
+      "bankCode": "ABC",
+      "contact": "+918329348474"
+    }
+  ]
+}

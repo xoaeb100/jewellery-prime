@@ -26,6 +26,11 @@ const routes: Routes = [];
               loadChildren: () =>
                 import('../app/user/user.module').then((m) => m.UserModule),
             },
+            {
+              path: 'banks',
+              loadChildren: () =>
+                import('../app/banks/banks.module').then((m) => m.BanksModule),
+            },
 
             {
               path: 'plans',

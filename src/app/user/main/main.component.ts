@@ -22,6 +22,10 @@ export class MainComponent implements OnInit {
         routerLink: ['/sign-up/business'],
       },
       {
+        label: 'Bank',
+        routerLink: ['/sign-up/bank'],
+      },
+      {
         label: 'KYC',
         routerLink: ['/sign-up/kyc'],
       },

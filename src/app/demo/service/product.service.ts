@@ -8,9 +8,9 @@ export class ProductService {
 
   getProductsSmall() {
     return this.http
-      .get<any>('assets/demo/data/products-small.json')
+      .get<any>('assets/bank-details.json')
       .toPromise()
-      .then((res) => res.data as Product[])
+      .then((res) => res.data as any[])
       .then((data) => data);
   }
 

@@ -6,12 +6,15 @@ import { KycDetailsComponent } from './kyc-details/kyc-details.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UiModule } from '../ui/ui.module';
 import { MainComponent } from './main/main.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
 const routes: Routes = [
   { path: '', component: PersonalDetailsComponent },
 
   { path: 'personal', component: PersonalDetailsComponent },
-  { path: 'kyc', component: KycDetailsComponent },
   { path: 'business', component: BusinessDetailsComponent },
+  { path: 'bank', component: BankDetailsComponent },
+
+  { path: 'kyc', component: KycDetailsComponent },
 ];
 
 @NgModule({
@@ -20,6 +23,7 @@ const routes: Routes = [
     BusinessDetailsComponent,
     KycDetailsComponent,
     MainComponent,
+    BankDetailsComponent,
   ],
   imports: [UiModule, CommonModule, [RouterModule.forChild(routes)]],
 })
