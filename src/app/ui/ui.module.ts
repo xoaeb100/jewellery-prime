@@ -12,6 +12,9 @@ import { SliderModule } from 'primeng/slider';
 import { FileUploadModule } from 'primeng/fileupload';
 import { TableModule } from 'primeng/table';
 import { MultiSelectModule } from 'primeng/multiselect';
+import {MenuModule} from 'primeng/menu';
+import {ChartModule} from 'primeng/chart';
+
 
 
 const arrays = [
@@ -27,7 +30,7 @@ const arrays = [
   SliderModule,
   FileUploadModule,
   TableModule,
-  MultiSelectModule,
+  MultiSelectModule,MenuModule,ChartModule
 ];
 @NgModule({
   declarations: [],

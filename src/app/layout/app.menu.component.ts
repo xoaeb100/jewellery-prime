@@ -23,6 +23,11 @@ export class AppMenuComponent implements OnInit {
         label: 'UI Components',
         items: [
           {
+            label: 'Admin-Dashboard',
+            icon: 'pi pi-user-plus',
+            routerLink: ['/dashboard/add'],
+          },
+          {
             label: 'Sign-Up',
             icon: 'pi pi-user-plus',
             routerLink: ['/sign-up/personal'],
