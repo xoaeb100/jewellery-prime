@@ -1,8 +1,14 @@
 <app-main></app-main>
+<div class="heading">
 
-<p>kyc-details works!</p>
+  <h1>
+    KYC Details
+  </h1>
+</div>
 <div class="kyc" style="display: flex; justify-content: space-evenly;">
 
+  <p-button [routerLink]="['/sign-up/bank']" style="float: right" label="Prev" icon="pi pi-arrow-left" iconPos="right">
+  </p-button>
   <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*"
     (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Upload Aadhar Card"></p-fileUpload>
 

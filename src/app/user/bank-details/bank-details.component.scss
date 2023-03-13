@@ -48,6 +48,7 @@
     -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    background-image: linear-gradient(to right, #e8bd70, #edd185);
   }
   
   .h5 {
@@ -58,4 +59,7 @@
     -webkit-text-fill-color: transparent;
     color: #c7ba06, #fdb931;
   }
-  
+  .prevbox{
+    display: flex;
+    justify-content: space-between;
+  }
