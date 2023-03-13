@@ -1,10 +1,13 @@
 <div class="col-12 md:col-6">
-  <app-main></app-main>
-  <br>
-
 
   <div class="card p-fluid">
-    <h5 style="margin-bottom:50px; font-family: sans-serif;">Bank Details:</h5>
+
+    <h5 style="margin-bottom:50px; font-family: sans-serif; display: flex;">
+      <div class="back-btn">
+        <button [routerLink]="['/banks']" pButton pRipple type="button" icon="pi pi-angle-left"
+          class="p-button-rounded p-button-text" style="color: goldenrod;"></button>
+      </div>Bank Details:
+    </h5>
 
     <div class="main" style="justify-content: space-evenly; display: flex; ">
 
@@ -143,7 +146,8 @@
     </div>
   </div>
 
-  <p-button [routerLink]="['/sign-up/kyc']" style="float: right" label="Next" icon="pi pi-arrow-right" iconPos="right">
+  <p-button [routerLink]="['/sign-up/kyc']" style="float: right" label="submit" icon="pi pi-arrow-right"
+    iconPos="right">
   </p-button>
 
 </div>

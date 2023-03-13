@@ -31,6 +31,13 @@ const routes: Routes = [];
               loadChildren: () =>
                 import('../app/banks/banks.module').then((m) => m.BanksModule),
             },
+            {
+              path: 'profile',
+              loadChildren: () =>
+                import('../app/profile/profile.module').then(
+                  (m) => m.ProfileModule
+                ),
+            },
 
             {
               path: 'plans',

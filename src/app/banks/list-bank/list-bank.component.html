@@ -1,8 +1,14 @@
+<div class="btn" style="margin-left: 93.5%;">
+  <button pButton pRipple type="button" label="Add+" class="p-button-raised" [routerLink]="['/banks/add']"
+    style="border-radius: 10px; margin-bottom: 5px;"></button>
+</div>
 <p-table [value]="products" styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
   <ng-template pTemplate="caption">
     List of Banks
   </ng-template>
+
   <ng-template pTemplate="header">
+
     <tr>
       <th>Id</th>
       <th>Acc no</th>
