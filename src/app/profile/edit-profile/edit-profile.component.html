@@ -1,1 +1,38 @@
-<p>edit-profile works!</p>
+<h5>Personal Information : <p-button label="Edit" styleClass="p-button-link"></p-button></h5>
+<br>
+<div class="two-box" style="display: flex;">
+
+  <span class="p-float-label" style="margin-right: 15px;">
+    <input id="float-input" type="text" pInputText (ngModel)="firstName">
+    <label for="float-input">Username</label>
+  </span>
+
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText (ngModel)="sureName">
+    <label for="float-input" style="font-size: 15px;">sureName</label>
+  </span>
+
+</div>
+<br>
+<h5>Your Gender<h5>
+    <br>
+    <br>
+
+    <div class="gender">
+
+      <span class="p-float-label">
+        <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="gender" (ngModel)="value8"
+          optionLabel="name"></p-dropdown>
+        <label for="gender" style="font-size: 15px;">Gender</label>
+      </span>
+
+    </div>
+    <br>
+    <h4>Enter Your Email</h4>
+    <br>
+    <div class="field">
+      <span class="p-float-label">
+        <input type="text" id="email" pInputText (ngModel)="email">
+        <label for="email">Email</label>
+      </span>
+    </div>
