@@ -28,9 +28,9 @@ export class AppMenuComponent implements OnInit {
             routerLink: ['/sign-up/personal'],
           },
           {
-            label: 'Costumers',
+            label: 'Customers',
             icon: 'pi pi-users',
-            routerLink: ['/sign-up/personal'],
+            routerLink: ['/customers'],
           },
           {
             label: 'Banks',
