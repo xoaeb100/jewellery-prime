@@ -2,16 +2,17 @@ export interface User {
   _id?: any;
   firstName: string;
   lastName: string;
+  email?: string;
+  password?: string;
   gender: string;
   userType?: USER_TYPE;
-  email?: string;
   mobileNo?: string;
-  password?: string;
   shopId?: string;
   shopUniqueId?: string;
   aadhaarNo?: string;
   panNo?: string;
-  
+  dob?: string;
+  regId?: string;
 
   line1?: string;
   line2?: string;
@@ -23,7 +24,11 @@ export interface User {
   locality?: string;
   regionCode?: REGION_CODE;
 
+  aadhaarImg?: string;
+  PAN?: string;
+  voterId?: string;
 
+  isDeleted?: boolean;
 }
 
 export enum USER_TYPE {

@@ -1,10 +1,10 @@
 <style>
-    h2{
-        font-weight: 700;
-        font-size: 2.2rem;
-    }
+  h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
 
-  input[type="text" i] {
+  input[type="text"i] {
     width: 50rem;
     height: 2rem;
     border-radius: 12px;
@@ -15,76 +15,80 @@
     color: black;
     border: none;
     background-color: #efefef;
-}
+  }
 
-label{
+  label {
     font-family: sans-serif !important;
     font-weight: 700;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.7);
-}
-
-.btn{
-      width: 100%;
-      border-radius: 10px;
-      font-size: 24px;
-      font-family: sans-serif;
-      padding: 1rem;
-      font-weight: 600;
-      border: 1px solid white;
-      background-image: linear-gradient(to bottom, #e8d174, #c59a3a);
   }
 
-  .btn:hover{
+  .btn {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 1rem;
+    font-weight: 600;
+    border: 1px solid white;
+    background-image: linear-gradient(to bottom, #e8d174, #c59a3a);
+  }
+
+  .btn:hover {
     cursor: pointer;
     background-image: linear-gradient(to bottom, #e8d174, #997c3d);
 
   }
-  label{
-    
-  }
+
+  label {}
 
 </style>
 <div class="container">
-    <div>
-      <h2>New plan</h2>  
-    </div>
-    <div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label inputbox">
-                <input type="text" id="inputtext" > 
-                <label for="inputtext">Name</label>
-            </span>
-        </div>
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label inputbox">
-                <input type="text" id="inputtext" > 
-                <label for="inputtext">Installment Amount</label>
-            </span>
-        </div>   <div class="field col-12 md:col-4">
-            <span class="p-float-label inputbox">
-                <input type="text" id="inputtext" > 
-                <label for="inputtext">Installment Type</label>
-            </span>
-        </div>   <div class="field col-12 md:col-4">
-            <span class="p-float-label inputbox">
-                <input type="text" id="inputtext" > 
-                <label for="inputtext">Maturity Amount</label>
-            </span>
-        </div>  
-        
-        <div class="field col-12 md:col-4">
-            <span class="p-float-label inputbox">
-              <p-calendar inputId="calendar" ></p-calendar>
-              <label for="calendar">Notification</label>
-            </span>
-          </div>
-    </div>
-    <div>
+  <div>
+    <h2>New plan</h2>
+  </div>
 
-        <button class="btn">
-            Launch Plan
-        </button>
+  <form [formGroup]="plan">
+
+    <div>
+      <div class="field col-12 md:col-4">
+        <span class="p-float-label inputbox">
+          <input type="text" id="inputtext" formControlName="name">
+          <label for="inputtext">Name</label>
+        </span>
+      </div>
+      <div class="field col-12 md:col-4">
+        <span class="p-float-label inputbox">
+          <input type="text" id="inputtext" formControlName="installmentAmt">
+          <label for="inputtext">Installment Amount</label>
+        </span>
+      </div>
+      <div class="field col-12 md:col-4">
+        <span class="p-float-label inputbox">
+          <input type="text" id="inputtext" formControlName="type">
+          <label for="inputtext">Installment Type</label>
+        </span>
+      </div>
+      <div class="field col-12 md:col-4">
+        <span class="p-float-label inputbox">
+          <input type="text" id="inputtext" formControlName="maturityAmt">
+          <label for="inputtext">Maturity Amount</label>
+        </span>
+      </div>
+
+      <div class="field col-12 md:col-4">
+        <span class="p-float-label inputbox">
+          <p-calendar inputId="calendar" formControlName="notifDate"></p-calendar>
+          <label for="calendar">Notification</label>
+        </span>
+      </div>
     </div>
+  </form>
+  <div>
+
+    <button (click)="submit()" class="btn">
+      Launch Plan
+    </button>
+  </div>
 </div>
-

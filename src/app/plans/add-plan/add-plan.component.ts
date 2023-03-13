@@ -1,13 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {
+  FormGroup,
+  FormsModule,
+  FormBuilder,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-add-plan',
   templateUrl: './add-plan.component.html',
   styleUrls: ['./add-plan.component.scss'],
 })
-export class AddPlanComponent {
-value1: any;
-  constructor() {
+export class AddPlanComponent implements OnInit {
+  plan!: FormGroup;
+
+  installmentAmt!: string;
+  name!: string;
+  maturityAmt!: string;
+  type!: any[];
+  duration!: any[];
+
+  value1: any;
+  constructor(private fb: FormBuilder) {
     this.duration = [
       { name: '1', code: '1' },
       { name: '2', code: '2' },
@@ -40,9 +54,17 @@ value1: any;
     ];
   }
 
-  installmentAmt!: string;
-  name!: string;
-  maturityAmt!: string;
-  type!: any[];
-  duration!: any[];
+  ngOnInit(): void {
+    this.plan = this.fb.group({
+      name: [''],
+      installmentAmt: [''],
+      type: [''],
+      maturityAmt: [''],
+      notifDate: [''],
+    });
+  }
+
+  submit() {
+    console.log(this.plan.value);
+  }
 }

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddPlanComponent } from './add-plan/add-plan.component';
 import { UiModule } from '../ui/ui.module';
 import { ListPlanComponent } from './list-plan/list-plan.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', component: ListPlanComponent },
@@ -12,6 +13,11 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AddPlanComponent, ListPlanComponent],
-  imports: [CommonModule, UiModule, [RouterModule.forChild(routes)]],
+  imports: [
+    CommonModule,
+    UiModule,
+    ReactiveFormsModule,
+    [RouterModule.forChild(routes)],
+  ],
 })
 export class PlansModule {}
